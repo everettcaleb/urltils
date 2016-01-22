@@ -21,7 +21,7 @@ To get the current query string as an object:
 
     urltils.qs.getAll();
 
-That would return { a: 5, b: 6, c: 12 }.
+That would return ``{ a: 5, b: 6, c: 12 }``.
 
 To set the query string from an object, but not cause navigation. It still will call any `onChange` callbacks.
 If you pass in `pushToHistory` then it will create an entry in history to go back to.
@@ -30,7 +30,7 @@ If you pass in `pushToHistory` then it will create an entry in history to go bac
 
 Nothing is returned because the URL is set for you.
 
-To set one part of the query string (inefficient!!!), but not cause navigation. It still will call `any onChange` callbacks.
+To set one part of the query string (inefficient!!!), but not cause navigation. It still will call any `onChange` callbacks.
 If you pass in `pushToHistory` then it will create an entry in history to go back to.
 
     urltils.qs.set('a', 50, true);
@@ -44,3 +44,10 @@ To register a callback that gets triggered: after navigating, after back/forward
     });
 
 There is currently not a way to unregister callbacks but that'll come soon enough.
+
+## License
+The GPL-2 license [can be found here](LICENSE).
+
+## Contributions
+Written by Caleb Everett, to contribute, fork the repo and submit a pull request.
+They will be reviewed and merged at my discretion.
