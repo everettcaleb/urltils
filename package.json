@@ -1,0 +1,26 @@
+{
+  "name": "urltils",
+  "version": "0.1.0",
+  "description": "A JavaScript library for manipulating URLs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everettcaleb/urltils.git"
+  },
+  "keywords": [
+    "url",
+    "parsing",
+    "history",
+    "web",
+    "front-end"
+  ],
+  "author": "Caleb Everett <everettcaleb95@gmail.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/everettcaleb/urltils/issues"
+  },
+  "homepage": "https://github.com/everettcaleb/urltils#readme"
+}
