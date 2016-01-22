@@ -4,7 +4,7 @@
   "description": "A JavaScript library for manipulating URLs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/everettcaleb/urltils/issues"
   },
-  "homepage": "https://github.com/everettcaleb/urltils#readme"
+  "homepage": "https://github.com/everettcaleb/urltils#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.9.1",
+    "uglify": "^0.1.5"
+  }
 }

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test urltils.qs</title>
+    </head>
+    <body>
+        <div style="padding:50px">
+            <label>No History</label>
+            <button type="button" onclick="urltils.qs.set('button1', '23')">button1 = 23</button>
+            <button type="button" onclick="urltils.qs.set('button2', '25')">button2 = 25</button>
+            <button type="button" onclick="urltils.qs.set('button1', '22')">button1 = 22</button>
+        </div>
+        <div style="padding:50px">
+            <label>With History</label>
+            <button type="button" onclick="urltils.qs.set('button1', '23', true)">button1 = 23</button>
+            <button type="button" onclick="urltils.qs.set('button2', '25', true)">button2 = 25</button>
+            <button type="button" onclick="urltils.qs.set('button1', '22', true)">button1 = 22</button>
+        </div>
+
+        <script>
+            var urltils = {};
+        </script>
+        <script src="../modules/querystring.js"></script>
+        <script>
+            urltils.qs.onChange(function(params, isNavigation) {
+                if(params.button1 == 23) {
+                    alert('Yay! 23!');
+                }
+                else if(isNavigation) {
+                    alert('Navigated');
+                }
+            });
+        </script>
+    </body>
+</html>
